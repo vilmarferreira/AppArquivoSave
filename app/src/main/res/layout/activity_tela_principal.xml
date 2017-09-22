@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vilmar.apparquivosave.TelaPrincipal"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="165dp"
+        android:layout_height="92dp"
+        android:layout_gravity="center"
+        app:srcCompat="@mipmap/topochamado" />
+
+    <EditText
+        android:id="@+id/editNomeUser"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome de usuário"
+
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Empresa"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editCNPJ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CNPJ"
+        android:inputType="number"
+        android:keyboardNavigationCluster="false"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailSubject" />
+
+    <EditText
+        android:id="@+id/editTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editProblema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.97"
+        android:ems="10"
+        android:hint="Problema: "
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="OnClickSave"
+        android:text="Enviar" />
+
+</android.support.v7.widget.FitWindowsLinearLayout>
