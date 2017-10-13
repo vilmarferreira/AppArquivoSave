@@ -19,7 +19,10 @@ public class chamadoDAO {
     String caminho;
 
 
+    public chamadoDAO ()
+    {
 
+    }
     public chamadoDAO(Context context) throws IOException {
         this.caminho=context.getFilesDir().getPath()+"/dados.txt";
     }
