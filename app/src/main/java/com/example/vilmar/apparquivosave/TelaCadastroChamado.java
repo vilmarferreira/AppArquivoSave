@@ -37,8 +37,9 @@ public class TelaCadastroChamado extends AppCompatActivity {
         chamadoDAO vrDAO= new chamadoDAO(getContext());
 
         vrDAO.Salvar(vrChamado);
-        Intent vrIntent = new Intent(getContext(),TelaPrincipal.class);
-        startActivity(vrIntent);
+        finish();
+//        Intent vrIntent = new Intent(getContext(),TelaPrincipal.class);
+//        startActivity(vrIntent);
     }
 
     private Context getContext()

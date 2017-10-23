@@ -43,29 +43,31 @@ public class AdapterChamado extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        View view= this.activity.getLayoutInflater().inflate(R.layout.itens_chamados,null);
-
+        if (convertView==null)
+        {
+            convertView = this.activity.getLayoutInflater().inflate(R.layout.itens_chamados, null);
+        }
         Chamado chamado = chamados.get(position);
 
-        TextView cliente= (TextView) view.findViewById(R.id.txtNome);
+        TextView cliente= (TextView) convertView.findViewById(R.id.txtNome);
         cliente.setText(chamado.getNomeCliente());
 
-        TextView empresa= (TextView) view.findViewById(R.id.txtEmpresa);
+        TextView empresa= (TextView) convertView.findViewById(R.id.txtEmpresa);
         empresa.setText(chamado.getEmpresa().toString());
 
-        TextView cnpj= (TextView) view.findViewById(R.id.txtCNPJ);
+        TextView cnpj= (TextView) convertView.findViewById(R.id.txtCNPJ);
         cnpj.setText(chamado.getCNPJ());
 
-        TextView email= (TextView) view.findViewById(R.id.txtEmail);
+        TextView email= (TextView) convertView.findViewById(R.id.txtEmail);
         email.setText(chamado.getEmail());
 
-        TextView telefone= (TextView) view.findViewById(R.id.txtTelefone);
+        TextView telefone= (TextView) convertView.findViewById(R.id.txtTelefone);
         telefone.setText(chamado.getContato());
 
-        TextView problema= (TextView) view.findViewById(R.id.txtProblema);
+        TextView problema= (TextView) convertView.findViewById(R.id.txtProblema);
         problema.setText(chamado.getProblema());
 
-        return view;
+        return convertView;
 
 
     }
