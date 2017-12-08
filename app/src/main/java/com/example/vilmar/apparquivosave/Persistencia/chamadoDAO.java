@@ -1,4 +1,4 @@
-package com.example.vilmar.apparquivosave;
+package com.example.vilmar.apparquivosave.Persistencia;
 
 /**
  * Created by VILMAR on 21/09/2017.
@@ -6,7 +6,8 @@ package com.example.vilmar.apparquivosave;
 
 import android.content.Context;
 import android.util.Log;
-import android.widget.Toast;
+
+import com.example.vilmar.apparquivosave.Models.Chamado;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

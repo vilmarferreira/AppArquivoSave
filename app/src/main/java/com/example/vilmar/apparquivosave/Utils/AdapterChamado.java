@@ -1,4 +1,4 @@
-package com.example.vilmar.apparquivosave;
+package com.example.vilmar.apparquivosave.Utils;
 
 import android.app.Activity;
 import android.view.View;
@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.vilmar.apparquivosave.Chamado;
+import com.example.vilmar.apparquivosave.Models.Chamado;
 import com.example.vilmar.apparquivosave.R;
 
 import java.util.List;
@@ -50,22 +50,22 @@ public class AdapterChamado extends BaseAdapter {
         Chamado chamado = chamados.get(position);
 
         TextView cliente= (TextView) convertView.findViewById(R.id.txtNome);
-        cliente.setText(chamado.getNomeCliente());
+        cliente.setText("Nome: "+chamado.getNomeCliente());
 
         TextView empresa= (TextView) convertView.findViewById(R.id.txtEmpresa);
-        empresa.setText(chamado.getEmpresa().toString());
+        empresa.setText("Empresa: "+chamado.getEmpresa().toString());
 
         TextView cnpj= (TextView) convertView.findViewById(R.id.txtCNPJ);
         cnpj.setText(chamado.getCNPJ());
 
         TextView email= (TextView) convertView.findViewById(R.id.txtEmail);
-        email.setText(chamado.getEmail());
+        email.setText("Email"+chamado.getEmail());
 
         TextView telefone= (TextView) convertView.findViewById(R.id.txtTelefone);
-        telefone.setText(chamado.getContato());
+        telefone.setText("Telefone: "+chamado.getContato());
 
         TextView problema= (TextView) convertView.findViewById(R.id.txtProblema);
-        problema.setText(chamado.getProblema());
+        problema.setText("Problema"+chamado.getProblema());
 
         return convertView;
 

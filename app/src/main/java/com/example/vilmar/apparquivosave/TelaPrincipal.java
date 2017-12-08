@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.example.vilmar.apparquivosave.Persistencia.chamadoDAO;
+
 import java.io.IOException;
 
 public class TelaPrincipal extends AppCompatActivity {
@@ -28,6 +30,16 @@ public class TelaPrincipal extends AppCompatActivity {
     public void OnClickAbrirChamado (View v)
     {
         Intent vrIntent = new Intent(this,TelaCadastroChamado.class);
+        startActivity(vrIntent);
+    }
+    public void OnClickBuscarCEP (View v)
+    {
+        Intent vrIntent = new Intent(this,BuscaCep.class);
+        startActivity(vrIntent);
+    }
+    public void onClickListaCep (View v)
+    {
+        Intent vrIntent = new Intent(this,ListaCep.class);
         startActivity(vrIntent);
     }
 }

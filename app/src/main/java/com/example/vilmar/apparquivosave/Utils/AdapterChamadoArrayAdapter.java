@@ -1,4 +1,4 @@
-package com.example.vilmar.apparquivosave;
+package com.example.vilmar.apparquivosave.Utils;
 
 import android.content.Context;
 import android.support.annotation.LayoutRes;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.example.vilmar.apparquivosave.Models.Chamado;
+import com.example.vilmar.apparquivosave.R;
 
 /**
  * Created by vilmarferreira on 19/10/2017.

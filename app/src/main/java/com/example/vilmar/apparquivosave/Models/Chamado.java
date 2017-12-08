@@ -1,4 +1,4 @@
-package com.example.vilmar.apparquivosave;
+package com.example.vilmar.apparquivosave.Models;
 
 /**
  * Created by VILMAR on 21/09/2017.
